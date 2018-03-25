@@ -56,4 +56,18 @@ df.loc[~df['sub_category'].isin(['OTHERS', 'FOOTBALL','BASKETBALL', 'BASEBALL'])
 df.fillna(0, inplace=True)
 ```
 
+# numpy
+
+- np.where()
+
+- 
+
+- np.argsort() — when want to pick idx of top/bottom
+```
+top_negative_features = np.argsort(linear_weights)[:10] — top 10
+top_positive_features = np.argsort(linear_weights)[-10:] — bottom 10
+```
+
+
+
 
