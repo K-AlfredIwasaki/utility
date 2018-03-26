@@ -52,7 +52,9 @@ v, y or x, p
 https://www.datacamp.com/community/tutorials/shell-commands-data-scientist
 
 - find
+```
 The following searches the tree structure starting in the current directory (".") for any file starting with "iris" and ending in any dumber of characters ("-name 'iris*'") of regular file type ("-type f"):
+```
 
 ```
 find . -name 'iris*' -type f
@@ -64,6 +66,7 @@ append line to a file
 ```
 echo hello world >> my_file.txt
 ```
+
 count the number of files in the directory
 ```
 ls -l directory | wc -l
@@ -78,9 +81,26 @@ cat file_1.csv file_2.csv > target_file.csv
 ```
 sed "s/<string to replace>/<string to replace it with>/g" <source_file> > <target_file>.
 ```
+
 ```
 sed "s/, ?,/,,/g" adult.csv >  adult.csv
 ```
+
+- sort
+columns separated by '|', sort on column 2 (-k2), case insensitive (-f)
+The -n and -r parameters allow you to sort numerically and in reverse order, respectively
+
+```
+sort data.csv | uniq -c | sort -nr | head -n 7
+```
+
+- uniq
+Sometimes you want to check for duplicate records in a large text file - that's when uniq comes in handy
+
+```
+sort data.csv | uniq -c | sort -nr | head -n 7
+```
+
 
 ### iterm
 
