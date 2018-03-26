@@ -1,4 +1,4 @@
-#vim
+### vim
 - use a instead i
 
 - move around
@@ -16,10 +16,12 @@ b or w
 ```
 gg
 ```
+
 - move to the end of the doc
 ```
 shift + ga
 ```
+
 - delete
 ```
 daw, caw, dd
@@ -28,6 +30,14 @@ daw, caw, dd
 - substitute
 ```
 s
+```
+
+- jump to the line
+```
+vi +36 filename
+or
+:36
+
 ```
 
 - copy and paste between terminals
@@ -49,7 +59,7 @@ find . -name 'iris*' -type f
 ```
 
 
-# command line
+### command line
 append line to a file 
 ```
 echo hello world >> my_file.txt
@@ -72,13 +82,7 @@ sed "s/<string to replace>/<string to replace it with>/g" <source_file> > <targe
 sed "s/, ?,/,,/g" adult.csv >  adult.csv
 ```
 
-
-
-
-
-
-
-# iterm
+### iterm
 
 - move between panes
 ```
