@@ -57,6 +57,16 @@ exit the container
 ```
 exit
 ```
+### sed
+
+- sed 's/\t/","/g;s/^/"/;s/$/"/;s/\n//g'
+  - s/\t/","/g 
+  - s/^/"/
+  - s/$/"/
+  - s/\n//g
+ - sed 's/\t/,,,",,,/g;s/\n//g'
+ 
+- g --- apply the replacement to all matches to the regexp
 
 
 
