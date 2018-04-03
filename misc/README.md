@@ -1,3 +1,8 @@
+### configure AWS CLI
+
+https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html
+
+
 ### boto3
 - load a datafame as a csv file to s3
 ```
