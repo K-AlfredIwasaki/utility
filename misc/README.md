@@ -1,4 +1,4 @@
-### configure AWS CLI
+### Configure AWS CLI
 
 https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html
 
