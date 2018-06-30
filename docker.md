@@ -1,4 +1,3 @@
-
 Check available docker images
 
 ```

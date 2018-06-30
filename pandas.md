@@ -1,3 +1,4 @@
+
 # Pandas / Jupyter Notebook
 
 ### General
@@ -27,6 +28,9 @@ from sklearn.utils import shuffle
 data = shuffle(data, random_state=777)
 ```
 
+
+
+
 ### Merge, join, concatenate
 
 - Join dfs vertically
@@ -35,6 +39,7 @@ df_combined = pd.concat([df_football, df_basketball, df_baseball])
 ```
 
 ### Indexing
+
 - Indexing --- in vs. not in
 - in
 ```
@@ -45,29 +50,21 @@ df[df.a.isin(df.b)]
 df[~df.a.isin(df.b)]
 ```
 
-  - not in (a bit complex)
+- not in (a bit complex)
 ```
 df.loc[~df['sub_category'].isin(['OTHERS', 'FOOTBALL','BASKETBALL', 'BASEBALL']),:]
 ```
+### Dropping 
 
-### NA
-- fillna all columns
+### 
+
+
+
+
+### Managing NA
+- fi
+- llna all columns
 ```
 df.fillna(0, inplace=True)
 ```
-
-# numpy
-
-- np.where()
-
-- 
-
-- np.argsort() — when want to pick idx of top/bottom
-```
-top_negative_features = np.argsort(linear_weights)[:10] — top 10
-top_positive_features = np.argsort(linear_weights)[-10:] — bottom 10
-```
-
-
-
 
