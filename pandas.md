@@ -69,7 +69,9 @@ df.fillna(0, inplace=True)
 ```
 
 ### S3
+Upload file to s3 and remove it locally
 
+```
 import boto3
 
 def upload_to_s3(bucket, folder, file):
@@ -85,4 +87,5 @@ outputfile = 'master-EN-category.csv'
 df_merged.to_csv(outputfile, sep='\t', index = False)
 upload_to_s3(bucket, folder, outputfile)
 !!rm 'master-EN-category.csv'
+```
 
