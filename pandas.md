@@ -89,3 +89,12 @@ upload_to_s3(bucket, folder, outputfile)
 !!rm 'master-EN-category.csv'
 ```
 
+### File Handling
+
+```
+import pandas as pd
+FOLDER = 's3://sn-deepnews/article-classifier-election/train'
+xls = pd.ExcelFile(FOLDER+'/'+'suspicious.xlsx')
+df = pd.read_excel(xls, 'election-dedup.csv')
+df.head(3)
+```
